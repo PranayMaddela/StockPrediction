@@ -1,0 +1,2 @@
+python StockPrediction.py
+pause

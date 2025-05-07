@@ -1,6 +1,6 @@
 # 📈 Stock Market Trend Prediction using ML & DL (Continuous vs Binary Analysis)
 
-This project compares traditional machine learning and deep learning models to predict stock market trends using both continuous price values and binary transformations (based on up/down movement).
+This project automates stock market trend prediction using modular Python scripts with GUI and CLI support. It applies 9 ML and 2 DL models (ANN, LSTM) on both continuous and binary-encoded stock data. Designed with future CI/CD integration and cloud scalability in mind, the system handles data preprocessing, training, and performance monitoring through HTML reports—ideal for SRE-style observability and DevOps-ready pipelines.
 
 ## 📊 Project Objective
 
@@ -88,6 +88,14 @@ Date,Close
 2023-01-02,235.80
 ...
 
+## 🛠️ DevOps & Cloud Relevance
+
+- Modular Python automation pipeline
+- GUI/CLI dual-mode execution
+- Metrics-based observability (Accuracy, F1-Score, ROC AUC)
+- Outputs HTML dashboards for monitoring & validation
+- Ready for containerization and cloud deployment
+- Supports extension to CI/CD workflows
 
 ## 🧪 Output
 Best Performing Model:

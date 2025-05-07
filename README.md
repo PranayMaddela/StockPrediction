@@ -1,74 +1,65 @@
-## 📈 Stock Market Trend Prediction using ML & DL (Continuous vs Binary Analysis)
-This project performs comparative analysis between traditional machine learning and deep learning models to predict stock price trends. It supports both continuous stock values and binary transformations (1 for increase, -1 for decrease), enabling a dual-mode evaluation.
+# 📈 Stock Market Trend Prediction using ML & DL (Continuous vs Binary Analysis)
 
-## 🗂 Dataset
-Format: CSV
+This project compares traditional machine learning and deep learning models to predict stock market trends using both continuous price values and binary transformations (based on up/down movement).
 
-Required Columns: Date, Close
+## 📊 Project Objective
 
-Used Stocks: Example includes HINDPETRO.NS.csv, BDD.csv, etc.
+Evaluate and compare 9 ML algorithms and 2 DL models (ANN & LSTM) across:
+- **Continuous Price Data**
+- **Binary Movement Data** (1 if current price > previous, else -1)
 
-## 🧠 Models Used
-Traditional ML Models:
+## 📁 Files Overview
 
-Support Vector Machine (SVM)
+| File | Purpose |
+|------|---------|
+| `StockPrediction.py` | Main GUI application (Tkinter) to run full workflow |
+| `test.py` | Script to run predictions and evaluate models in console |
+| `run.bat` | Launch script to open GUI directly |
+| `SCREENS.docx` | Screenshots & project explanation |
+| `*.csv` | Sample datasets (e.g., `HINDPETRO.NS.csv`, `BDD.csv`) |
+| `binary_output.html` | Model results for binary-transformed data |
+| `continuous_output.html` | Model results for raw continuous data |
 
-K-Nearest Neighbors (KNN)
+## 🧠 Models Included
 
-Decision Tree
+**Traditional ML:**
+- SVM
+- KNN
+- Decision Tree
+- Random Forest
+- Logistic Regression
+- AdaBoost
+- XGBoost
+- Naive Bayes
 
-Random Forest
+**Deep Learning:**
+- ANN (Artificial Neural Network)
+- LSTM (Long Short-Term Memory)
 
-Logistic Regression
+## 🚀 Features
 
-AdaBoost
+- GUI-based dataset upload and execution
+- Preprocessing and normalization
+- Training on continuous and binary formats
+- Evaluation metrics: Accuracy, F1-Score, ROC AUC
+- LSTM actual vs predicted price visualization
+- HTML comparison table generation
 
-XGBoost
+## 📦 How to Run
 
-Naive Bayes
+1. Install dependencies:
 
-Deep Learning Models:
+   pip install -r requirements.txt
 
-Artificial Neural Network (ANN)
+2. Run the GUI:
+   
+   python StockPrediction.py
 
-Long Short-Term Memory (LSTM)
+3. Or execute headless tests:
+   
+   python test.py
 
-## ⚙️ Project Features
-Upload and preprocess datasets via GUI (Tkinter)
-
-Generate binary vs continuous datasets
-
-Train and test multiple ML/DL models on each
-
-Output performance in terms of Accuracy, F1-Score, and ROC AUC
-
-Visual comparison graphs and HTML-based performance tables
-
-## 📊 Performance Highlights
-From binary_output.html and continuous_output.html:
-
-Binary LSTM: 100% Accuracy, F1-Score, and ROC AUC
-
-Continuous LSTM: ~96.7% Accuracy with high F1-Score
-
-ANN and Decision Trees also showed strong performance
-
-## 🖥 How to Run
-Double-click run.bat to launch the GUI.
-
-Use GUI buttons in sequence:
-
-Upload Stock Dataset
-
-Preprocess Dataset
-
-Run Continuous Prediction
-
-Run Binary Prediction
-
-Comparison Graph
-
-View Comparison Table
+Alternatively, double-click run.bat to launch the GUI.
 
 ## 📁 Files Included
 StockPrediction.py: Main GUI and model logic
@@ -83,7 +74,26 @@ SCREENS.docx: Screenshots and walkthrough
 
 binary_output.html, continuous_output.html: Model performance reports
 
+## 📌 Dataset Format
+CSV file must contain:
+
+- Date: Date column
+
+- Close: Stock closing price
+
+Example:
+
+Date,Close
+2023-01-01,234.12
+2023-01-02,235.80
+...
+
+
 ## 🧪 Output
+Best Performing Model:
+- Binary LSTM: 100% Accuracy, F1-Score, ROC AUC
+- Continuous LSTM: ~96.7% Accuracy, strong F1 & ROC
+
 Real-time LSTM vs Actual price plots
 
 Comparative bar charts across all models

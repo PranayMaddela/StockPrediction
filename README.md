@@ -83,7 +83,7 @@ SCREENS.docx: Screenshots and walkthrough
 
 binary_output.html, continuous_output.html: Model performance reports
 
-🧪 Output
+## 🧪 Output
 Real-time LSTM vs Actual price plots
 
 Comparative bar charts across all models

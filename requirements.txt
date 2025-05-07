@@ -1,0 +1,12 @@
+
+---
+
+### ✅ `requirements.txt`
+
+numpy
+pandas
+matplotlib
+scikit-learn
+xgboost
+tensorflow
+tk
